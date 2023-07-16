@@ -1,15 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat');
 
+* {
+    box-sizing: border-box;
+    font-family: montserrat, sans-serif;
+}
 
 ul {
     list-style-type: none;
     display: flex;
-    gap: 15px;
+    gap: 110px;
     margin-left: 0;
-  }
+}
+
 
 img {
     max-width: 100%;
     height: auto;
+    padding: 0;
 }
 
 .links {
@@ -19,34 +26,52 @@ img {
 }
 
 li {
-    margin: 0 16px 0 16px;
+    padding: 0 10px 0 10px;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: .1em;
+    border-bottom-width: 2px;
+}
+
+#H {
+    border-bottom-style: solid;
+    border-bottom-color: #E4D000;
 }
 
 .verse {
     text-align: center;
     margin: 0;
     padding: 8px 0 8px 0;
-    background-color: yellow;
+    background-color: #E4D000;
+    font-weight:bolder;
 }
 
 .info {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     max-width: 620px;
     position: relative;
     margin-left: auto;
     right: 100px;
+    margin-top: 186px;
 }
 
-.info button {
+button {
     background-color: black;
     width: 100%;
     line-height: 40px;
+    letter-spacing: 0.1em;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 4px;
+    border-color:pink;
 }
 
-.info button,
-.mission {
+button,
+.mission,
+.verse {
     color: white;
 }
 
@@ -54,12 +79,36 @@ h2 {
     margin: 0;
 }
 
+.info-wrapper {
+    background-image: url('Images/background.jpg');
+    width: 100%;
+    height: 649px;
+    top: 0px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
 .mission h1 {
-    margin: 15px 5px 25px 20px;
+    margin: 40px 20px 55px 45px;
+    font-weight: 900;
+}
+
+.mission p {
+    font-size: 14px;
+    font-weight: bold;
 }
 
 p .info {
     flex-basis: 625px;
+}
+
+.mission-wrapper {
+    width: 100%;
+    height: 300px;
+    background-color: pink;
 }
 
 .mission-container {
@@ -68,22 +117,34 @@ p .info {
     max-width: 800px;
     margin-left: auto;
     margin-right: auto;
+    position: relative;
+    top: 60px;
 }
 
 .mission {
     display: flex;
     align-items: center;
+    margin-right: 10px;
 }
 
 .merch {
     margin-left: auto;
     margin-right: auto;
-    max-width: 400px;
+    max-width: fit-content;
 }
 
 .pitch {
     display: flex;
     flex-direction: column;
-    align-self: right;
+    position: relative;
     max-width: 200px;
+    margin: 20px 40px 20px 220px; 
+}
+
+span {
+    font-weight: 100;
+}
+
+.pitch h1 {
+    margin: 0;
 }

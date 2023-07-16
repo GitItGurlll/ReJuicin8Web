@@ -6,13 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+  $(window).scroll(function() {
+    var scrollTop = $(this).scrollTop();
+    $('.parallax-container').css('background-position', 'center ' + scrollTop / 2 + 'px');
+  });
+</script>
 </head>
 <body>
     <div class="top">
         <div class="header"> 
             <ul class="links">
                 <li><img src="Images/logo.png"></li>
-                <li>Home</li>
+                <li id="H">Home</li>
                 <li>About</li>
                 <li>Menu</li>
                 <li>Order</li>
@@ -26,18 +33,21 @@
     <div class="landing-image">
         <img src="Images/Non-pixelated.png">
     </div>
+    <div class="info-wrapper">
     <div class="info">
         <p>ReJuicin8 Juice Bar is a place where customers can come relax and enjoy the 
             benefits that healthy eating and drinking has to offer. With menu items made from 
             the freshest, all natural ingredients, our cold pressed juices will be sure to compliment 
             or replace any type of meal.</p>
         <h2>WE GOT THE JUICE!!!</h2>
-        <button>Order Online</button>
-        <button>View Menu</button>
+        <button>ORDER ONLINE</button>
+        <button>VIEW MENU</button>
     </div>
+    </div>
+    <div class="mission-wrapper">
     <div class="mission-container"> 
     <div class="mission">
-        <h1>OUR MISSION</h1>
+        <h1><span>OUR</span> MISSION</h1>
         <p>ReJuicin8 Juice Bar is more than just your average juice bar. We are a health-
             conscious juice bar that focuses on serving healthy, delicious, cold-pressed juices and other menu 
             items to help our customers make the most of their day while achieving their health driven goals. We 
@@ -46,6 +56,8 @@
             people. We want to see everyone smiling and glowing.</p>
     </div>
     </div>
+    </div>
+    <div class="merch-container">
     <div class="merch">
         <div class="pitch">
             <h1>Juicy Merch</h1>
@@ -55,6 +67,7 @@
             <div class="shirt">
                 <img src="Images/ReJuicinShirt.png">
         </div>
+    </div>
     </div>
 </body>
 </html>
