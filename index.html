@@ -6,13 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script>
-  $(window).scroll(function() {
-    var scrollTop = $(this).scrollTop();
-    $('.parallax-container').css('background-position', 'center ' + scrollTop / 2 + 'px');
-  });
-</script>
+    <script src="script.js" defer></script>
 </head>
 <body>
     <div class="top">
@@ -69,5 +63,12 @@
         </div>
     </div>
     </div>
+    <div id="flashy">
+        <div class="imp">
+            <canvas id="hero-lightpass"></canvas>  
+    <div id="scroll-container">
+        <div id="text-element">Initial Text</div>
+        <div id="subtext-element">Initial Text</div>
+      </div>    
 </body>
 </html>

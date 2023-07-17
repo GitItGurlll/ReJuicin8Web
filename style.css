@@ -5,6 +5,23 @@
     font-family: montserrat, sans-serif;
 }
 
+html {
+    height: 100vh;
+}
+  
+body {
+    height: 500vh;
+}
+  
+canvas {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 100vw;
+    max-height: 100vh;
+}
+
 ul {
     list-style-type: none;
     display: flex;
@@ -147,4 +164,56 @@ span {
 
 .pitch h1 {
     margin: 0;
+}
+
+.flashy {
+  height: 500vh;
+  display: flex;
+}
+
+canvas {
+  position: sticky;
+  left: 40%;
+  top: 50%;
+  max-height: 100vh;
+  max-width: 520px;
+  transform: translate(-50%, -50%);
+}
+
+#scroll-container {
+  height: 500vh; /* Set the desired height for the scroll container */
+  overflow-y: scroll;
+  position: relative;
+}
+  
+#text-element,
+#subtext-element {
+  position: sticky;
+  width: fit-content;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+  
+#text-element {
+  top: 18%;
+  left: 48%;
+  display: block;
+  font-size: 4em;
+  margin-top: 0.67em;
+  margin-bottom: 0.67em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+}
+
+#subtext-element {
+top: 30%;
+left: 49%;
+display: block;
+font-size: 28px;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
 }
