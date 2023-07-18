@@ -19,8 +19,7 @@
         
         // Preloading images to drastically improve performance
         const currentFrame = index => (`Drink/Green${index.toString()}.jpg`);
-        console.log(currentFrame)
-        const frameCount = 180; // There 148 images for that animation-sequence to load
+        const frameCount = 180; // There 162 images for that animation-sequence to load
         const images = [];
 
         const preloadImages = () => {
@@ -90,32 +89,33 @@
         window.addEventListener('scroll', () => {  
           var myDiv = document.getElementById('scroll-container');
           var scrollPosition = window.scrollY;
-          var divOffset = myDiv.offsetTop;
+          var divOffset = (myDiv.offsetTop + (vh / 2));
           var divHeight = myDiv.clientHeight;
           
         if (scrollPosition >= divOffset && scrollPosition < divOffset + divHeight) {
             const scrollTop = (html[0].scrollTop - divOffset);
             const maxScrollTop = (scrollTop - window.innerHeight);
-            const scrollFraction = (scrollTop / (5 * vh));
-            console.log(scrollTop)
-            console.log(maxScrollTop)
+            const scrollFraction = (scrollTop / (3.9 * vh));
             const frameIndex = Math.min(
                 frameCount - 1,
                 Math.floor(scrollFraction * frameCount)
             );
             // console.log('FrameIndex', frameIndex);
 
-            requestAnimationFrame(() => context.drawImage(images[frameIndex - 18], 0, 0));
-              console.log(frameIndex)
+            requestAnimationFrame(() => context.drawImage(images[frameIndex], 0, 0));
+            console.log(divOffset)
               console.log(scrollFraction)
-              console.log(frameCount)
+              console.log(scrollTop)
+              console.log(divOffset)
+              console.log(divHeight)
+              console.log(maxScrollTop)
             const containerHeight = container.offsetHeight;
             const sectionHeight = containerHeight / totalSections;
             const sectionIndex = Math.floor(scrollTop / sectionHeight);
 
 
             if (((scrollFraction * 100) % 10) ==  0) {
-                currentSectionIndex = (((scrollFraction * 10) / 10) - 1)
+                currentSectionIndex = (((scrollFraction * 10) / 10))
             }
 
               if (sectionIndex !== currentSectionIndex) {
