@@ -20,7 +20,7 @@
         // Preloading images to drastically improve performance
         const currentFrame = index => (`Drink/Green${index.toString()}.jpg`);
         console.log(currentFrame)
-        const frameCount = 148; // There 148 images for that animation-sequence to load
+        const frameCount = 180; // There 148 images for that animation-sequence to load
         const images = [];
 
         const preloadImages = () => {
@@ -35,7 +35,7 @@
 
         // Draw the first image
         const img = new Image();
-        img.src = currentFrame(1);
+        img.src = currentFrame(0);
         img.onload = function(){
             context.drawImage(img, 0, 0);
         }
@@ -72,9 +72,9 @@
           const descriptions = [
             "Rejuvenate is a revitalizing blend of fresh and vibrant flavors, carefully crafted to invigorate your senses. This delightful juice concoction combines the zesty tang of oranges, the tropical sweetness of pineapples, the tangy zest of limes, and the subtle warmth of ginger. To add a hint of earthiness, we include the refreshing essence of carrots, balanced with the crispness of red apples. With each sip of Rejuvenate, you'll experience a harmonious fusion of flavors that will leave you feeling refreshed, energized, and ready to take on the day.",
             'A complete elixir, combining the vibrant essence of red cabbage, the invigorating kick of ginger, the rich sweetness of black grapes, the zesty tang of lime, the refreshing burst of oranges, and the crispness of red apple. This revitalizing blend is designed to awaken your senses and replenish your energy, offering a harmonious fusion of flavors that will leave you feeling refreshed and revitalized.',
-            'Green and Red Apple, Kale, Celery, Pineapple, Lemon, Ginger',
-            'Kiwi, Green Grapes, Organe, Spinach, Basil, Red Apple',
-            'Carrot, Pineapple, Red Apple, Red Grapes, Ginger, Red Beet, Lime',
+            'At the juice bar, the "Recover" drink is a revitalizing blend of Green and Red Apple, Kale, Celery, Pineapple, Lemon, and Ginger. This vibrant concoction combines the crisp sweetness of apples with the earthy essence of kale and the refreshing tang of pineapple. The addition of celery adds a subtle hint of freshness, while lemon provides a zesty kick. Finally, the invigorating touch of ginger adds a spicy note to complete this rejuvenating beverage. Sip on the "Recover" and feel your energy replenished as you indulge in the harmonious fusion of flavors and the nourishing benefits of these wholesome ingredients.',
+            'A revitalizing and nutrient-packed drink, this vibrant concoction combines the refreshing flavors and health benefits of kiwi, green grapes, orange, spinach, basil, and red apple. The tartness of kiwi and green grapes perfectly complements the citrusy sweetness of orange and red apple, creating a harmonious blend. The addition of spinach and basil adds a dose of green goodness, providing essential vitamins and minerals. This invigorating drink not only tantalizes your taste buds but also replenishes your body with essential nutrients, helping you refocus and recharge.',
+            'Crafted to invigorate your senses and boost your energy levels, this vibrant concoction combines the goodness of carrot, pineapple, red apple, red grapes, ginger, red beet, and lime. The carrot adds a touch of natural sweetness and a wealth of vitamins and antioxidants, while the pineapple and red apple contribute to the refreshing tropical flavor. The red grapes provide a burst of juicy goodness, and the ginger adds a subtle spicy kick. The red beet brings its earthy richness and vibrant color, while the lime adds a zesty twist. It brings you back to life!',
             'Lime, Red/Green Apple, Cucumber, Green Grapes',
             'Green Apple, Bosc Pear, Carrot, Lemon',
             'Cucumber, Green Apple, Ginger, Lemon',
@@ -105,7 +105,7 @@
             );
             // console.log('FrameIndex', frameIndex);
 
-            requestAnimationFrame(() => context.drawImage(images[frameIndex + 2], 0, 0));
+            requestAnimationFrame(() => context.drawImage(images[frameIndex - 18], 0, 0));
               console.log(frameIndex)
               console.log(scrollFraction)
               console.log(frameCount)
@@ -115,7 +115,7 @@
 
 
             if (((scrollFraction * 100) % 10) ==  0) {
-                currentSectionIndex = ((scrollFraction * 10) / 10)
+                currentSectionIndex = (((scrollFraction * 10) / 10) - 1)
             }
 
               if (sectionIndex !== currentSectionIndex) {
@@ -130,7 +130,7 @@
                   subtextElement.style.opacity = '1';
                   descriptionElement.style.opacity = '1';
                 
-                }, 400); // Change the duration (in milliseconds) to control the fade in time
+                }, 200); // Change the duration (in milliseconds) to control the fade in time
                 currentSectionIndex = sectionIndex;
               }
             }

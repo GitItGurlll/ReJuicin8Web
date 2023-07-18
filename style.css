@@ -181,6 +181,7 @@ canvas {
 
 #scroll-container {
   height: 500vh; /* Set the desired height for the scroll container */
+  background-color: #E4D000;
 }
   
 #text-element,
