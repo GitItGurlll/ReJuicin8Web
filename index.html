@@ -4,73 +4,99 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Home</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="top-bottom.css">
+    <script src="hamburger.js" defer></script> 
 </head>
-<body>
+<script>
+    $(window).scroll(function() {
+      var scrollTop = $(this).scrollTop();
+      $('.parallax-container').css('background-position', 'center ' + scrollTop / 2 + 'px');
+    });
+  </script>
+<body style="margin: 0;">
     <div class="top">
         <div class="header"> 
+            <a href="index.html"><img id="logo" src="Images/logo.png"></a>
             <ul class="links">
-                <li><img src="Images/logo.png"></li>
-                <li id="H">Home</li>
-                <li>About</li>
-                <li>Menu</li>
-                <li>Order</li>
-                <li>Contact</li>
+                <li id="current">Home</li>
+                <li><a href="NavPages/about.html">About</a></li>
+                <li><a href="NavPages/menu.html">Menu</a></li>
+                <li><a href="NavPages/contact.html">Contact</a></li>
+                <a href="https://www.toasttab.com/rejuicin8" style="text-decoration: none;"><li id="order">ORDER NOW</li></a>      
             </ul>
         </div>
         <div class="verse"> 
-            <p>"That times of refreshing may come from the presence of the Lord." Acts 3:20 ESV</p>
+            <strong>"That times of refreshing may come from the presence of the Lord." Acts 3:20 ESV</strong>
         </div>
     </div>
+    <label>
+        <input type="checkbox" id="showItemsCheckbox">
+    <span class="menu"> <span class="hamburger"></span> </span>
+    <ul>
+      <li class="hidden"><a href="NavPages/about.html">About</a></li>
+      <li class="hidden"><a href="NavPages/menu.html">Menu</a></li>
+      <li class="hidden"><a href="NavPages/contact.html">Contact</a></li>
+      <li class="hidden order"><a href="https://www.toasttab.com/rejuicin8">Order</a></li>
+    </ul>
+    </label>
     <div class="landing-image">
         <img src="Images/Non-pixelated.png">
     </div>
-    <div id="flashy">
-        <div id="scroll-container">
-            <div id="header">Signature Cold Pressed Juices</div>
-            <div class="scroll-animation">
-                <canvas id="hero-lightpass"></canvas> 
-                <div class="text-wrapper">
-                    <div id="text-element">Rejuvenate</div>
-                    <div id="subtext-element">Orange, Pineapple, Lime, Ginger, Carrot, Red Apple</div>
-                    <div id="description">Rejuvenate is a revitalizing blend of fresh and vibrant flavors, carefully crafted to invigorate your senses. This delightful juice concoction combines the zesty tang of oranges, the tropical sweetness of pineapples, the tangy zest of limes, and the subtle warmth of ginger. To add a hint of earthiness, we include the refreshing essence of carrots, balanced with the crispness of red apples. With each sip of Rejuvenate, you'll experience a harmonious fusion of flavors that will leave you feeling refreshed, energized, and ready to take on the day.</div>
-                    <button id="Order">Order Now.</button>
-        </div>
-        </div>
-        </div>    
     <div class="info-wrapper">
-    <div class="info">
-        <h2>Want free juice?</h2>
-        <button>Sign up for rewards</button>
-    </div>
-    </div>
-    <div class="mission-wrapper">
-    <div class="mission-container"> 
-    <div class="mission">
-        <h1><span>OUR</span> MISSION</h1>
-        <p>ReJuicin8 Juice Bar is more than just your average juice bar. We are a health-
-            conscious juice bar that focuses on serving healthy, delicious, cold-pressed juices and other menu 
-            items to help our customers make the most of their day while achieving their health driven goals. We 
-            exist to nourish and revive our community as there has never been a better time to embrace good 
-            health, high energy, and renewed strength. A healthy lifestyle promotes happy lives and happy 
-            people. We want to see everyone smiling and glowing.</p>
-    </div>
-    </div>
-    </div>
-    <div class="merch-container">
-    <div class="merch">
-        <div class="pitch">
-            <h1>Juicy Merch</h1>
-            <p>Be fresh.</p>
-            <button>Shop</button>
-        </div>
-            <div class="shirt">
-                <img src="Images/ReJuicinShirt.png">
+        <div class="info">
+            <p>
+                ReJuicin8 Juice Bar is a place where customers can come relax and enjoy the 
+                benefits that healthy eating and drinking has to offer. With menu items made from 
+             the freshest, all natural ingredients, our cold pressed juices will be sure to compliment 
+             or replace any type of meal.
+            </p>
+            <h2>WE GOT THE JUICE!!!</h2>
+            <a href="https://www.toasttab.com/rejuicin8"><button>ORDER ONLINE</button></a>
+            <a href="NavPages/menu.html"><button>VIEW MENU</button></a>
         </div>
     </div>
+    <div class="orange-wrapper">
+    <div class="bottom-cards">
+        <div class="rewards-wrapper">
+            <div class="rewards">
+                <h2>Juice on us!</h2>
+                <a href="https://www.toasttab.com/rejuicin8/rewardsSignup"><button>SIGN UP FOR REWARDS</button></a>
+            </div>
+        </div>
+        <div class="question-wrapper">
+            <div class="question">
+                <h2>Have a question?</h2>
+                <a href="NavPages/contact.html"><button>REACH OUT</button></a>
+            </div>
+        </div>
     </div>
-    
+    <div class="footer">
+        <div class="footer-left">
+            <div class="footer-links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="NavPages/about.html">About</a></li>
+                    <li><a href="NavPages/menu.html">Menu</a></li>
+                </ul>
+            </div>
+            <div class="contact">
+                <h3><a href="NavPages/contact.html">Contact</a></h3>
+                <hr>
+                <div class="socials">
+                <a href="https://www.instagram.com/rejuicin8juicebar"><img src="Images/Instagram.png"></a>
+                <img src="Images/Facebook.png">
+                </div>
+            </div>
+        </div>
+        <div class="footer-right">
+            <div class="address">
+                <img src="Images/Footer-Logo.png">
+                <h3><a href="https://goo.gl/maps/1cpWjFJSHE1eW2hu8">501 Montgomery Street
+                    Savannah, GA 31401</a></h3>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

@@ -1,164 +1,123 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat');
-@font-face {
-    font-family: 'Cooper';
-    src: url('Cooper\ Black\ Regular.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'Mohr';
-    src: url('MohrRounded-Regular.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'EB';
-    src: url('EBGaramond-VariableFont_wght.ttf') format('truetype');
-}
-
-* {
-    box-sizing: border-box;
-    font-family: montserrat, sans-serif;
-}
-  
-.spacer {
-    height: 10px
-}
-
-ul {
-    list-style-type: none;
-    display: flex;
-    gap: 8%;
-    margin-left: 0;
-}
-
-
-img {
-    max-width: 100%;
-    height: auto;
-    padding: 0;
-}
-
-.links {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-li {
-    padding: 0 10px 0 10px;
-    font-weight: 400;
-    font-size: 16px;
-    letter-spacing: .1em;
-    border-bottom-width: 2px;
-}
-
-#H {
-    border-bottom-style: solid;
-    border-bottom-color: #E4D000;
-}
-
-.verse {
-    text-align: center;
-    margin: 0;
-    padding: 8px 0 8px 0;
-    background-color: #E4D000;
-    font-weight:bolder;
+.info h2 {
+    margin: 0 0 12px;
+    font-size: 26px;
+    font-family: 'Hornbill';
 }
 
 .info {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    margin: auto;
-    position:relative;
-    top: 35%;
     max-width: 620px;
-    font-family: Mohr;
+    font-family: 'Big Caslon', sans-serif;
+    margin-right: 10vw;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 20px;
+    border-style: solid;
+    border-radius: 20px;
+    border-color: rgba(255, 255, 255, 0.3);
 }
 
-button {
-    background-color: yellowgreen;
-    border-radius: 9999px;
+.info p {
+    font-family: 'Ubuntu';
+    font-weight: 500;
+    font-size: 22px;
+}
+
+.info * {
+    font-family: 'Big Caslon', sans-serif;
+}
+
+.info a {
+    width: 100%;
+    margin-right: 8px;
+}
+
+.info button, .rewards button, .question button {
+    background-color: rgb(240, 172, 45);
     width: 100%;
     line-height: 40px;
     letter-spacing: 0.1em;
-    font-size: 16px;
-    font-weight: bold;
+    font-size: 20px;
+    font-weight: 999;
     margin: 4px;
-    border-color:pink;
+    border: 0;
+    border-radius: 10px;
+    font-family: 'Barlow Condensed', sans-serif;
+    
 }
 
-button,
-.mission,
-.verse {
+.info a {
+    text-decoration: none;
+    font-family: 'Barlow Condensed', sans-serif;
     color: white;
 }
 
-.info button {
-    margin-top: 8%;
-    max-width: 75%;
-    font-weight: bolder;
-    font-family: Mohr;
-    font-size: 22px;
-    color: black;
+button {
+    color: white;
 }
 
-h2 {
-    margin: 0;
-    font-size: 75px;
-    font-weight: bolder;
-    font-family: Mohr;
-}
- 
 .info-wrapper {
-    background-image: url('Images/background.png');
+    background-image: url('Images/Background.jpg');
     width: 100%;
-    height: 649px;
-    margin: auto;
+    height: 600px;
+    top: 0px;
     background-attachment: fixed;
-    background-position: center;
     background-repeat: no-repeat;
+    background-position: -100px;
     background-size: cover;
     overflow: hidden;
-}
-
-.mission h1 {
-    margin: 40px 20px 55px 45px;
-    font-weight: 900;
-}
-
-.mission p {
-    font-size: 14px;
-    font-weight: bold;
-    flex-basis: 460px;
-}
-
-p .info {
-    flex-basis: 625px;
-}
-
-.mission-wrapper {
-    width: 100%;
-    height: fit-content;
-    background-color: pink;
     display: flex;
     align-items: center;
+    justify-content: flex-end;
+}
+
+.rewards-wrapper, .question-wrapper {
+    background: radial-gradient(rgba(238, 70, 70, 0.822), rgb(238, 70, 70));
+    width: 700px;
+    text-align: center;
+    margin: 20px 20px 20px 20px;
+    border-radius: 15px;
+}
+
+.rewards, .question {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 250px;
+    padding-bottom: 250px;
+}
+
+.rewards h2, .question h2 {
+    font-size: 60px;
+    margin: 20px 0 15px 0;
+    font-weight: 200;
+    font-family: 'Hornbill';
+}
+
+.bottom-cards {
+    display: flex;
     justify-content: center;
-}
-
-.mission-container {
-    background-color: black;
-    opacity: 80%;
-    display: flex;
-    max-width: 800px;
-    margin: 3% 0 3% 0;
-}
-
-.mission {
-    display: flex;
-    align-items: center;
-    margin-right: 10px;
     flex-wrap: wrap;
+}
+
+.rewards button {
+    background-color: rgb(179, 45, 45);
+}
+
+.question-wrapper {
+    background: radial-gradient(rgba(238, 70, 148, 0.822), rgb(238, 70, 148)); 
+}
+
+.question button {
+    background-color: rgb(189, 54, 117);
+}
+
+.question button, .rewards button {
+    width: 260px;
 }
 
 .merch {
@@ -183,93 +142,42 @@ span {
     margin: 0;
 }
 
-.flashy {
-  height: 400vh;
-  display: flex;
+@media(max-width: 1450px) {
+.rewards-wrapper, .question-wrapper {
+    width: 70%;
 }
 
-canvas {
-  position: sticky;
-  left: 40%;
-  top: 25%;
-  max-height: 100vh;
-  max-width: 540px;
-  transform: translate(-50%, 0%);
 }
 
-#scroll-container {
-  height: 400vh; /* Set the desired height for the scroll container */
-  background-color: #E4D000;
-  display: flex;
-  flex-direction: column;
-}
-  
-#text-element,
-#subtext-element,
-#description, #header {
-  position: sticky;
-  width: fit-content;
-  opacity: 1;
-  transition: opacity 0.3s ease;
-  font-family: Cooper;
+@media(max-width: 1150px) {
+.info-wrapper {
+    justify-content: center;
 }
 
-#Order {
-    position: sticky;
-    opacity: 1;
-    transition: opacity 0.3s ease;
-    font-family: EB;
+.info p {
+    font-family: 'Ubuntu';
+    font-weight: 500;
+    font-size: 21px;
 }
 
-#header {
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    font-size: 500%;
-    flex-basis: fit-content;
-    top: 2%;
-    left: 49%;
-    flex-shrink: 5;
+.info {
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
-.scroll-animation {
-    position: sticky;
-    display: flex;
-    top: 30%;
-    left: 49%;
-    max-height: 500px;
-    margin-bottom: 30%;
+.rewards, .question {
+    padding-top: 125px;
+    padding-bottom: 125px;
 }
 
-.text-wrapper {
-    display: flex;
-    flex-direction: column;
-    position: sticky;
-    top: 18%;
-    width: 40%;
-    left: 49%;
-    margin-bottom: 55vh;
-}
-  
-#text-element {
-  display: block;
-  font-size: 4em;
-  font-weight: bold;
+.rewards-wrapper, .question-wrapper {
+    width: 700px;
 }
 
-#subtext-element {
-display: block;
-font-size: 28px;
-font-weight: bold;
 }
 
-#description {
-    font-size: 25px;
-    font-family: EB;
-    font-weight: bold;
+@media(max-width: 850px) {
+.landing-image img {
+    content: url('Images/Mobile-Header.png');
 }
-
-#subtext-element, 
-#description {
-    margin-left: 10px;
 }

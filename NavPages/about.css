@@ -1,0 +1,80 @@
+img {
+    max-width: 100%;
+    height: auto;
+    padding: 0;
+}
+
+.About-Wrapper {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    flex-wrap: wrap;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 20px;
+    border-style: solid;
+    border-radius: 20px;
+    border-color: rgba(255, 255, 255, 0.3);
+    width: fit-content;
+}
+
+.Wrapper {
+    background-color: orange;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.photo {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.photo h3 {
+    font-family: 'Hornbill';
+    background-color: #E4D000;
+    width: fit-content;
+    border-radius: 10px;
+    padding: 4px;
+    padding-top: 6px;
+    position: relative;
+    font-size: 20px;
+    bottom: 22px;
+    left: 161px;
+    margin: 0;
+}
+
+.About-Wrapper img {
+    border-radius: 10px;
+    width: 100%;
+    margin: 0 5px 0 5px;
+}
+
+.About-Wrapper p {
+    margin: 20px 0 0 30px;
+    max-width: 1000px;
+    font-weight: 500;
+    font-size: 20px;
+    font-family: 'Ubuntu';
+}
+
+.text {
+    display: block;
+}
+
+@media(max-width: 1350px) {
+.About-Wrapper p {
+    margin: 20px 0 0 0px;
+    max-width: 1230px;
+    font-weight: 500;
+    font-size: 19px;
+}
+
+.About-Wrapper{
+    margin: 0 10px 0 10px;
+}
+}
+
+@media(max-width: 650px) {
+    #header {
+        content: url('../Images/AboutMobileHeader.png');
+    }
+}
