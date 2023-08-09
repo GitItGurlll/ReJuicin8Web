@@ -28,6 +28,7 @@ label {
 }
 
 #logo {
+    width: 145px;
     position: absolute;
     top: 7px;
     left: 17px;
@@ -36,8 +37,9 @@ label {
 .top ul {
     list-style-type: none;
     display: flex;
-    gap: 6vw;
-    margin-left: 22px;
+    gap: 6.7vw;
+    margin-left: 92px;
+    text-decoration: none;
     background-color: white;
     margin-top: 10px;
     margin-bottom: 8px;
@@ -128,7 +130,7 @@ img {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    padding-bottom: 20px;
+    padding-bottom: 50px;
     width: 100%;
 }
 
@@ -225,8 +227,8 @@ label .menu {
 
 label .hamburger {
   position: absolute;
-  top: 135px;
-  left: 50px;
+  top: 131px;
+  left: 71px;
   width: 40px;
   height: 6px;
   background: orange;
@@ -283,6 +285,7 @@ label input:checked + .menu .hamburger:before {
 label input:checked + .menu + ul { opacity: 1; }
 
 label ul {
+    text-align: center;
   z-index: 200;
   position: absolute;
   top: 50%;
@@ -329,7 +332,7 @@ label a {
     display: block;
     margin-right: auto;
     margin-top: 28px;
-    left: 52%;
+    left: 53%;
     transform: translate(-50%, -50%);
 }
 

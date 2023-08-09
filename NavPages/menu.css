@@ -56,18 +56,18 @@ span {
 }
 
 .menu h4 {
-    font-family: 'Hind';
+    font-family: 'Ubuntu';
     font-weight: 200;
-    font-size: 20px;
+    font-size: 21px;
     margin: 6px 10px 10px 10px;
 }
 
-#choose {
+.menu .subtext {
     margin-left: auto;
     margin-right: auto;
     width: fit-content;  
     font-family: 'Barlow Condensed';
-    font-size: 35px;
+    font-size: 37px;
     margin-bottom: 15px;
 }
 
@@ -85,7 +85,7 @@ span {
 
 .menu h3 {
     margin: 10px 0 0 0;
-    font-size: 22px;
+    font-size: 23px;
 }
 
 @media(max-width: 1100px) {
