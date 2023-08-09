@@ -15,6 +15,7 @@ img {
     justify-content: flex-start;
     background: radial-gradient(rgba(240, 172, 45, 0.911), rgb(240, 172, 45));
     font-family: 'Montserrat';
+    padding-bottom: 25px;
 }
 
 .menu h2 {
@@ -57,7 +58,7 @@ span {
 .menu h4 {
     font-family: 'Hind';
     font-weight: 200;
-    font-size: 18px;
+    font-size: 20px;
     margin: 6px 10px 10px 10px;
 }
 
