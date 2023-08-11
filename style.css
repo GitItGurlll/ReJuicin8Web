@@ -187,5 +187,6 @@ span {
     background-image: url('Images/Circle-Juice.png');
     background-size: contain;
     background-position: 0;
+    background-attachment:inherit;
 }
 }
