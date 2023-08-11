@@ -184,7 +184,7 @@ span {
 
 @media(max-width: 450px) {
 .info-wrapper {
-    background-image: url('Images/Circle-Juice.jpg');
+    background-image: url('Images/Circle-Juice.png');
     background-position: 0;
     background-attachment: inherit;
 }
