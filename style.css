@@ -184,9 +184,10 @@ span {
 
 @media(max-width: 450px) {
 .info-wrapper {
-    background-image: url('Images/Circle-Juice.png');
+    background-image: url('Images/Circle-Juice.jpg');
     background-size: contain;
     background-position: 0;
+    height: 570px;
     background-attachment:inherit;
 }
 }
