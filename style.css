@@ -181,3 +181,11 @@ span {
     content: url('Images/Mobile-Header.png');
 }
 }
+
+@media(max-width: 450px) {
+.info-wrapper {
+    background-image: url('Images/Circle-Juice.png');
+    background-size: contain;
+    background-position: 0;
+}
+}
