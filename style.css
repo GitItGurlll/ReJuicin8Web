@@ -8,7 +8,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 620px;
+    width: 620px;
     font-family: 'Big Caslon', sans-serif;
     margin-right: 10vw;
     background-color: rgba(255, 255, 255, 0.8);
@@ -64,7 +64,6 @@ button {
     top: 0px;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background-position: -100px;
     background-size: cover;
     overflow: hidden;
     display: flex;

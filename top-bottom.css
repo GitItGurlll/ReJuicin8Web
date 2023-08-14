@@ -84,9 +84,17 @@ li a {
 }
 
 img {
-    max-width: 100%;
+    width: 100%;
     height: auto;
     padding: 0;
+}
+
+.socials {
+    width: 35px;
+}
+
+.footerLogo {
+    width: 160px;
 }
 
 .links {
@@ -120,7 +128,7 @@ img {
 .verse {
     text-align: center;
     margin: 0;
-    padding: 12px 0 12px 0;
+    padding: 12px 2px 12px 0;
     background-color: #E4D000;
     font-weight:bolder;
 }
@@ -228,7 +236,7 @@ label .menu {
 label .hamburger {
   position: absolute;
   top: 131px;
-  left: 71px;
+  left: 77px;
   width: 40px;
   height: 6px;
   background: orange;
@@ -332,7 +340,7 @@ label a {
     display: block;
     margin-right: auto;
     margin-top: 28px;
-    left: 53%;
+    left: 55%;
     transform: translate(-50%, -50%);
 }
 
