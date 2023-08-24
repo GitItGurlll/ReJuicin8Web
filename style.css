@@ -58,7 +58,7 @@ button {
 }
 
 .info-wrapper {
-    background-image: url('Images/Background.jpg');
+    background-image: url('Images/Background.webp');
     width: 100%;
     height: 600px;
     top: 0px;
@@ -92,7 +92,7 @@ button {
 
 .rewards h2, .question h2 {
     font-size: 60px;
-    margin: 20px 0 15px 0;
+    margin: 20px 10px 15px 10px;
     font-weight: 200;
     font-family: 'Hornbill';
 }
@@ -177,14 +177,14 @@ span {
 
 @media(max-width: 850px) {
 .landing-image img {
-    content: url('Images/Mobile-Header.png');
+    content: url('Images/Mobile-Header.webp');
 }
 }
 
 @media(max-width: 450px) {
 .info-wrapper {
-    background-image: url('Images/Circle-Juice.png');
-    background-position: 0;
+    background-image: url('Images/Circle-Juice.webp');
+    background-position: center;
     background-attachment: inherit;
 }
 

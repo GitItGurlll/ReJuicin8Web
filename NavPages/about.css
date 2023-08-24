@@ -13,7 +13,7 @@ img {
     border: 20px;
     border-style: solid;
     border-radius: 20px;
-    border-color: rgba(255, 255, 255, 0.3);
+    border-color: rgba(255, 255, 255, 0.1);
     width: fit-content;
 }
 
@@ -75,7 +75,10 @@ img {
 }
 
 @media(max-width: 650px) {
+    .About-Wrapper p{
+        margin-top: 5px;
+    }
     #header {
-        content: url('../Images/AboutMobileHeader.png');
+        content: url('../Images/About-Mobile-Header.webp');
     }
 }

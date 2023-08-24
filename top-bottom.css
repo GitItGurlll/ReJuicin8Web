@@ -111,7 +111,7 @@ img {
 
 .top li {
     font-weight: 401;
-    font-size: 20px;
+    font-size: 1.5em;
     letter-spacing: .1em;
     border-bottom-width: 2px;
 }
@@ -189,14 +189,14 @@ img {
     padding: 0;
 }
 
-@media(max-width: 1000px) {
-
+@media(max-width: 1200px) {
 .hidden {
     display: none;
 }
 
 .top li {
     display: none;
+    font-size: 5.5vmin;
 }
     
 label {
@@ -226,8 +226,7 @@ label .menu {
   height: 100px;
   background: #FFF;
   border-radius: 50% 50% 50% 50%;
-  -webkit-transition: .3s ease-in-out;
-  transition: .3s ease-in-out;
+  transition: .35s ease-in-out;
   box-shadow: 0 0 0 0 #FFF, 0 0 0 0 #FFF;
   cursor: pointer;
   
@@ -236,7 +235,7 @@ label .menu {
 label .hamburger {
   position: absolute;
   top: 131px;
-  left: 77px;
+  left: 70px;
   width: 40px;
   height: 6px;
   background: orange;

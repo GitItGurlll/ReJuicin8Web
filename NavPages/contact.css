@@ -179,7 +179,7 @@ i {
 }
 
 .location h3 {
-  margin-bottom: 0;
+  margin: 0 10px 0 10px;
 }
 
 /* -- ↓ ↓ ↓ some responsiveness ↓ ↓ ↓ -- */
@@ -210,6 +210,6 @@ i {
 
 @media(max-width: 650px) {
 #header {
-    content: url('../Images/ContactMobileHeader.png');
+    content: url('../Images/Contact-Mobile-Header.webp');
 }
 }

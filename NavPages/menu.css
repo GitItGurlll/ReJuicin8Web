@@ -96,6 +96,6 @@ span {
 
 @media(max-width: 650px) {
 #header {
-    content: url('../Images/MenuMobileHeader.png');
+    content: url('../Images/Menu-Mobile-Header.webp');
 }
 }
